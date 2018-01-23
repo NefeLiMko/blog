@@ -1,25 +1,11 @@
-<html>
+<div>
+    <h1><a href="/">Vladich Blog</a></h1>
+</div>
 
-<head>
-    <title>Vladich blog</title>
-</head>
-
-<body>
-    <div>
-        <h1><a href="/">Vladich blog Blog</a></h1>
-    </div>
-
-    <div>
-        <p>published: 14.06.2014, 12:14</p>
-        <h2><a href="">My first post</a></h2>
-        <p>Текстус</p>
-    </div>
-
-    <div>
-        <p>published: 14.06.2014, 12:14</p>
-        <h2><a href="">My second post</a></h2>
-        <p>Еще один текстус</p>
-    </div>
-</body>
-
-</html>
+{% for post in posts %}
+<div>
+    <p>published: {{ post.published_date }}</p>
+    <h1><a href="">{{ post.title }}</a></h1>
+    <p>{{ post.text|linebreaksbr }}</p>
+</div>
+{% endfor %}
