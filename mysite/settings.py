@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = '!sc!lm^lii4zrfnp50i)ao52s8%v2ncab2a1_j!4z!g4(ac&!%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'AlexGrid.pythonanywhere.com']
 
